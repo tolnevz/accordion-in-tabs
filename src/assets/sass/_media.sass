@@ -1,0 +1,49 @@
+@media screen and (max-width: 991px)
+  .header
+    .icon-wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 10px
+
+      .icon
+        font-size: 1.8em
+        margin-bottom: 10px
+
+        i
+          width: 30px
+          padding: 20px
+
+  .content
+      max-width: 95%
+      margin: auto
+
+  .tab-nav
+      display: block
+
+
+@media screen and (max-width: 767px)
+  .header
+    .icon-wrapper
+      grid-template-columns: 1fr
+
+  .tab-wrapper
+    grid-template-columns: 1fr
+
+  .tab-nav
+    ul
+      display: flex
+      flex-direction: column
+      height: 81px
+      overflow: hidden
+
+      &.is-open
+        height: auto
+
+      li
+        border-right: none !important
+        border-bottom: 1px solid $border-color !important
+
+      .active
+        -webkit-box-ordinal-group: -1
+        order: -1
+        border: 1px solid $border-color !important
+        border-radius: 5px !important
