@@ -1,4 +1,4 @@
-# test_app
+# Accordion in Tabs
 
 ## Project setup
 ```
